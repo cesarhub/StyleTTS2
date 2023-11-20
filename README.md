@@ -1,3 +1,33 @@
+git clone https://github.com/yl4579/StyleTTS2.git
+  cd StyleTTS2
+  python3 -m venv venv
+  source venv/bin/activate
+  python3 -m pip install --upgrade pip
+  python3 -m pip install wheel
+  pip install -r requirements.txt
+  pip install phonemizer
+  sudo apt-get install -y espeak-ng
+  pip install gdown
+  gdown https://drive.google.com/uc?id=1K3jt1JEbtohBLUA0X75KLw36TW7U1yxq
+  7z x Models.zip
+  rm Models.zip
+  gdown https://drive.google.com/uc?id=1jK_VV3TnGM9dkrIMsdQ_upov8FrIymr7
+  7z x Models.zip
+  rm Models.zip
+  pip install ipykernel pickleshare nltk SoundFile
+  python -c "import nltk; nltk.download('punkt')"
+  pip install --upgrade jupyter ipywidgets librosa
+  python -m ipykernel install --user --name=venv --display-name="Python (venv)"
+  jupyter notebook
+  
+Then navigate to /Demo and open either `Inference_LJSpeech.ipynb` or `Inference_LibriTTS.ipynb` and they should work.
+
+
+Check My account for Model.zip files
+
+
+
+
 # StyleTTS 2: Towards Human-Level Text-to-Speech through Style Diffusion and Adversarial Training with Large Speech Language Models
 
 ### Yinghao Aaron Li, Cong Han, Vinay S. Raghavan, Gavin Mischler, Nima Mesgarani
